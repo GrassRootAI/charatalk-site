@@ -16,9 +16,20 @@
 
   <h2>FAQ</h2>
 
-  <p><strong>Which computers are supported?</strong><br>
-  CharaTalk runs on Mac computers with Apple silicon (M1 or later) and macOS 15 or newer. 8&nbsp;GB of RAM
-  is enough; CharaTalk uses more when your machine has it.</p>
+  <p><strong>Which devices are supported?</strong></p>
+  <ul>
+    <li><strong>Mac:</strong> Mac computers with Apple silicon (M1 or later) and
+    macOS 15 or newer. 8&nbsp;GB of RAM is enough; CharaTalk uses more when the
+    machine has it.</li>
+    <li><strong>iPad:</strong> iPad models with an M1 chip or later, with
+    iPadOS 26 or newer.</li>
+    <li><strong>iPhone:</strong> iPhone Air, iPhone 17 Pro and iPhone 17 Pro Max
+    or later, with iOS 26 or newer.</li>
+  </ul>
+  <p>On other iPad and iPhone models the App Store may still offer the download,
+  but CharaTalk will tell you at launch that the device can't render video —
+  those chips are too slow or have too little memory for the on-device
+  models.</p>
 
   <p><strong>Why was my photo rejected?</strong><br>
   The portrait check wants a front-facing face, mouth closed, and a face that's
@@ -27,13 +38,37 @@
 
   <p><strong>Why does rendering take so long?</strong><br>
   CharaTalk runs heavy AI models locally instead of on a server — that's the
-  price of complete privacy. The time estimate shown before you start is
-  honest; a fast machine renders roughly 5–10× slower than real time. You can keep
-  using your computer while it renders.</p>
+  price of complete privacy. As a guide, a one-minute clip takes roughly
+  9&nbsp;minutes on an iPad Pro (M2), 11&nbsp;minutes on an iPhone Air and
+  20&nbsp;minutes on an iPad Air (M1); a recent Mac is faster. The estimate shown
+  before you start is measured on the device itself and gets more accurate with
+  every video you make. Renders estimated at over two hours ask you to confirm
+  first.</p>
+
+  <p><strong>Can I use my device while it renders?</strong><br>
+  On a Mac, yes. On iPad and iPhone, keep CharaTalk on screen: iOS doesn't let
+  apps use the graphics hardware in the background, so the render
+  <strong>pauses</strong> when you switch away. Nothing is lost — the finished
+  part is kept, and <strong>Resume</strong> continues it, even after the app was
+  closed. The screen stays on while rendering.</p>
+
+  <p><strong>The estimate says it will take longer than usual.</strong><br>
+  Low Power Mode slows rendering by roughly 40&nbsp;% — turn it off for full
+  speed. Thin devices also slow down gradually as they warm up on very long
+  clips. On battery, a long render uses about 30&nbsp;% of an iPad's charge per
+  hour; CharaTalk suggests plugging in when that matters.</p>
 
   <p><strong>I quit mid-render — is my video gone?</strong><br>
-  No. The output file is playable at every moment, and reopening the render
-  resumes where it stopped.</p>
+  No. The output file is playable at every moment. After a cancel, a crash or a
+  force-quit, CharaTalk offers to resume where it stopped, without repeating the
+  preparation steps.</p>
+
+  <p><strong>Where are my videos saved?</strong><br>
+  Wherever you choose. On a Mac, <strong>Save video…</strong> writes a normal
+  video file. On iPad and iPhone, <strong>Save video…</strong> lets you choose
+  Photos or the Files app. Until you delete it, a finished video also stays in
+  <strong>My videos</strong> inside the app, and deleting there always asks
+  first and tells you whether it is the only copy.</p>
 
   <p><strong>Can I turn off the "AI-generated" watermark?</strong><br>
   Yes, in Settings — but we ask you to keep it on anything you share. See the
@@ -43,12 +78,37 @@
   No. The app has no network access at all. See the
   <a href="../privacy/">privacy policy</a>.</p>
 
+  <p><strong>What's free, and what does the full version add?</strong><br>
+  Videos up to one minute are free — full quality, every feature. The one-time
+  in-app purchase "CharaTalk Full Version" removes the length limit. There is
+  no subscription and no account.</p>
+
+  <p><strong>I bought CharaTalk when it was a paid app. Do I pay again?</strong><br>
+  On a Mac, no: your original purchase is recognized automatically, and
+  Settings ▸ Full version shows "Unlocked — included with your original
+  purchase". If it doesn't, click "Restore purchase" while signed in to the
+  same Apple Account.</p>
+  <p>On iPad and iPhone the App Store can't tell CharaTalk about a purchase of
+  the old paid Mac app, so the full version isn't unlocked there automatically.
+  Write to us (see Contact below) and we'll unlock it for you. This applies only
+  to the old paid app, which was sold until September 11, 2026; the in-app
+  purchase does carry across platforms by itself — see the next answer.</p>
+
+  <p><strong>I bought the full version on another device.</strong><br>
+  One purchase covers every platform. Settings ▸ Full version ▸ Restore purchase
+  brings it to any Mac, iPad or iPhone signed in to the same Apple Account.
+  Family Sharing is on for the purchase.</p>
+
+  <p><strong>Refunds</strong><br>
+  Purchases are handled by Apple; request a refund at
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
   <h2>Contact</h2>
   <p><a href="mailto:charatalk-support@grassroot-ai.com">charatalk-support@grassroot-ai.com</a>
-  — include your macOS version, Mac model, and what you imported (image size,
-  audio length) when reporting an issue.</p>
+  — include your device model and OS version, and what you imported (image
+  size, audio length) when reporting an issue.</p>
 
-  <footer>© 2026 Chaoyi Wang · CharaTalk for macOS</footer>
+  <footer>© 2026 Chaoyi Wang · CharaTalk for macOS, iPadOS and iOS</footer>
 </main>
 </body>
 </html>
